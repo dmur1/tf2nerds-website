@@ -1,42 +1,47 @@
 :root {
-	--color-1: #3e3e3e;
-	--color-2: #f5e5c1;
-	--color-3: #f4722b;
+    --color-1: #3e3e3e;
+    --color-2: #f5e5c1;
+    --color-3: #f4722b;
 }
 
 body {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	letter-spacing: 1.5px;
-	word-spacing: 1.5px;
-	background-color: var(--color-1);
-	color: var(--color-2);
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 1.5px;
+    background-color: var(--color-1);
+    color: var(--color-2);
+    background-image: url("foundry.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
 }
 
 h1 {
-	font-size: 60px;
-	text-align: center;
+    font-size: 60px;
+    text-shadow: 2px 2px #3e3e3e;
 }
 
 h2 {
-	font-size: 40px;
-	text-align: center;
-}
-
-p {
-	text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px #3e3e3e;
 }
 
 a:link {
-	color: var(--color-3);
+    color: var(--color-3);
 }
 
+.boxed {
+    background-color: #f5e5c1;
+    border: 3px solid #3e3e3e ;
+} 
+
 footer {
-	text-align: center;
-	bottom: 0%;
-	width: 100%;
-	padding: 5px;
-	font-size: 10px;
-	position: fixed;
-	background-color: var(--color-2);
-	color: var(--color-3);
+    bottom: 0%;
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+    position: fixed;
+    background-color: var(--color-2);
+    color: var(--color-3);
+    border: 3px solid #3e3e3e ;
 }
