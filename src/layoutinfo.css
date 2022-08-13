@@ -13,6 +13,7 @@
     --color-1: #3e3e3e;
     --color-2: #f5e5c1;
     --color-3: #f4722b;
+    --color-4: #282828;
 }
 
 body {
@@ -50,7 +51,7 @@ header {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    transform: translateZ(-20px) scale(4);
+    transform: translateZ(-40px) scale(8);
 }
 
 .tf2nerds {
@@ -87,7 +88,8 @@ h2 {
     margin: 0px;
     width: 100%;
     z-index: 1;
-    background-color: #282828;
+    background-color: var(--color-4);
+    box-shadow: 0px 1px 5px var(--color-4);
 }
 
 h3 {
@@ -97,13 +99,13 @@ h3 {
     width: 10%;
     font-size: 20px;
     padding: 10px;
-    background-color: #282828;
+    background-color: var(--color-4);
     display: inline-block;
     border-radius: 12px;
     z-index: 2;
 }
 
-h3:hover {
+h3:hover, a:hover {
     color: var(--color-3);
 }
 
@@ -111,8 +113,30 @@ a {
     color: var(--color-2);
 }
 
-a:hover {
-    color: var(--color-3);
+.content {
+    position: relative;
+    padding: 25px;
+    top: -28px;
+    width: 75%;
+    z-index: 0;
+    background-color: var(--color-1);
+    margin: auto;
+}
+
+footer {
+    margin: 0px;
+    position: relative;
+    bottom: -400%;
+    height: 130px;
+    width: 100%;
+    background-color: var(--color-4);
+    z-index: 1;
+}
+
+.ftext {
+    color: var(--color-2);
+    padding: 20px;
+    margin: 0px;
 }
 
 .info {
