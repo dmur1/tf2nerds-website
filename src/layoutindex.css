@@ -125,6 +125,10 @@ a:hover {
 }
 
 a {
+    color: var(--color-6);
+}
+
+h2>a, h3>a {
     color: var(--color-7);
 }
 

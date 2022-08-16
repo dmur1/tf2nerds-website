@@ -125,6 +125,10 @@ a:hover {
 }
 
 a {
+    color: var(--color-6);
+}
+
+h2>a, h3>a {
     color: var(--color-7);
 }
 
@@ -174,7 +178,7 @@ p {
     margin: 6px 0px 6px 0px;
 }
 
-.info {
+.servers {
     box-shadow: 0px -10px var( --color-1);
     background-color: var(--color-1);
     z-index: 3;
