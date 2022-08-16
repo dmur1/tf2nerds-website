@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'TF2 Build';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TF2 Build'), url('./tf2build.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'TF2 Secondary';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TF2 Secondary'), url('./TF2\ Secondary.woff') format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-1: #3e3e3e;
+    --color-2: #f5e5c1;
+    --color-3: #f4722b;
+    --color-4: #282828;
+    --color-5: #e3e2e2;
+    --color-6: #4f4944;
+    --color-7: #d2cdc8;
+    --color-8: #a49e96;
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font-family: 'TF2 Secondary';
+    letter-spacing: 2px;
+    word-spacing: 1.5px;
+    background-color: var(--color-1);
+    color: var(--color-6);
+    background-size: auto;
+    text-align: center;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(-40px) scale(8);
+}
+
+.tf2nerds {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    z-index: 1;
+}
+
+.page {
+    position: fixed;
+    top: 95px;
+    width: 100%;
+}
+
+h1 {
+    font-family: TF2 Build;
+    margin: 0px;
+    width: 100%;
+    height: 95px;
+    font-size: 55px;
+    padding: 20px;
+    color: var(--color-5);
+    background-color: var(--color-1);
+}
+
+h3 {
+    font-family: TF2 Build;
+    font-size: 200%;
+}
+
+.hbuttons {
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--color-4);
+    box-shadow: 0px 1px 5px var(--color-4);
+}
+
+h2 {
+    font-family: TF2 Build;
+    position: sticky;
+    top: 0px;
+    margin: 0px;
+    width: 10%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: var(--color-4);
+    display: inline-block;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+a:hover {
+    color: var(--color-3);
+}
+
+a {
+    color: var(--color-7);
+}
+
+.content {
+    position: relative;
+    padding: 25px;
+    top: -28px;
+    width: 65%;
+    z-index: 0;
+    background-color: var(--color-5);
+    margin: auto;
+    box-shadow: 0px 0px 10px var(--color-4);
+}
+
+footer {
+    margin: 0px;
+    position: relative;
+    bottom: -400%;
+    height: 130px;
+    width: 100%;
+    background-color: var(--color-4);
+    z-index: 1;
+}
+
+.ftext {
+    color: var(--color-7);
+    padding: 20px;
+    margin: 0px;
+}
+
+.article {
+    background-color: var(--color-7);
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    box-shadow: 0px 2px 0px var(--color-8),0px -2px 0px var(--color-8);
+}
+
+h4 {
+    font-size: 145%;
+    color: var(--color-3);
+    margin: 0px 0px 10px 0px;
+}
+
+p {
+    font-size: 100%;
+    margin: 6px 0px 6px 0px;
+}
+
+.rewind {
+    box-shadow: 0px -10px var( --color-1);
+    background-color: var(--color-1);
+    z-index: 3;
+}
