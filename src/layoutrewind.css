@@ -34,10 +34,11 @@ body {
     font-family: 'TF2 Secondary';
     letter-spacing: 2px;
     word-spacing: 1.5px;
-    background-color: var(--color-1);
     color: var(--color-6);
-    background-size: auto;
+    background-size: 100%;
     text-align: center;
+    background-image: url("gravelpit-003.jpg");
+    background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -48,24 +49,6 @@ body {
 }
 
 header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    transform-style: preserve-3d;
-    z-index: -1;
-}
-
-.background {
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    transform: translateZ(-40px) scale(8);
-}
-
-.tf2nerds {
     position: fixed;
     top: 0px;
     width: 100%;
@@ -74,11 +57,6 @@ header {
     z-index: 1;
 }
 
-.page {
-    position: fixed;
-    top: 95px;
-    width: 100%;
-}
 
 h1 {
     font-family: TF2 Build;
@@ -91,9 +69,11 @@ h1 {
     background-color: var(--color-1);
 }
 
-h3 {
-    font-family: TF2 Build;
-    font-size: 200%;
+.page {
+    position: fixed;
+    top: 95px;
+    height: 100vh;
+    width: 100%;
 }
 
 .hbuttons {
@@ -143,20 +123,9 @@ h2>a, h3>a {
     box-shadow: 0px 0px 10px var(--color-4);
 }
 
-footer {
-    margin: 0px;
-    position: relative;
-    bottom: -400%;
-    height: 130px;
-    width: 100%;
-    background-color: var(--color-4);
-    z-index: 1;
-}
-
-.ftext {
-    color: var(--color-7);
-    padding: 20px;
-    margin: 0px;
+h3 {
+    font-family: TF2 Build;
+    font-size: 200%;
 }
 
 .article {
@@ -176,6 +145,25 @@ h4 {
 p {
     font-size: 100%;
     margin: 6px 0px 6px 0px;
+}
+
+footer {
+    top: 100%;
+    right: 0%;
+    padding: 0px;
+    position: absolute;
+    bottom: 0px;
+    margin: 50px 0 0 0;
+    height: 138px;
+    width: 100vw;
+    background-color: var(--color-4);
+    z-index: 1;
+}
+
+.ftext {
+    color: var(--color-7);
+    padding: 20px;
+    margin: 0px;
 }
 
 .rewind {
