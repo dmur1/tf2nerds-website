@@ -37,7 +37,7 @@ body {
     color: var(--color-6);
     background-size: 100%;
     text-align: center;
-    background-image: url("gravelpit-003.jpg");
+    background-image: url("process-001.jpg");
     background-repeat: no-repeat;
 }
 
@@ -72,7 +72,7 @@ h1 {
 .page {
     position: fixed;
     top: 95px;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
 }
 
@@ -130,30 +130,30 @@ h3 {
 
 .article {
     background-color: var(--color-7);
+    margin: auto;
     width: 100%;
-    text-align: left;
     padding: 10px;
     box-shadow: 0px 2px 0px var(--color-8),0px -2px 0px var(--color-8);
 }
 
 h4 {
-    font-size: 145%;
-    color: var(--color-3);
+    font-family: TF2 Build;
+    font-size: 110%;
+    color: var(--color-6);
     margin: 0px 0px 10px 0px;
 }
 
 p {
     font-size: 100%;
-    margin: 6px 0px 6px 0px;
+    margin: 6px 2px 6px 2px;
 }
 
 footer {
-    top: 100vh;
+    top: 10%;
     right: 0%;
     padding: 0px;
     position: relative;
     margin: 0;
-    height: 138px;
     width: 100vw;
     background-color: var(--color-4);
     z-index: 1;
@@ -163,16 +163,4 @@ footer {
     color: var(--color-7);
     padding: 20px;
     margin: 0px;
-}
-
-.rewind {
-    box-shadow: 0px -10px var( --color-1);
-    background-color: var(--color-1);
-    z-index: 3;
-}
-
-td {
-    text-align: center;
-    padding: auto;
-    width: 300px;
 }
