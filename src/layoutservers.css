@@ -38,10 +38,12 @@ body {
     background-size: 100%;
     text-align: center;
     background-image: url("process-001.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 .wrapper {
+    width: 100%;
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
@@ -57,13 +59,12 @@ header {
     z-index: 1;
 }
 
-
 h1 {
     font-family: TF2 Build;
     margin: 0px;
     width: 100%;
     height: 95px;
-    font-size: 55px;
+    font-size: auto;
     padding: 20px;
     color: var(--color-5);
     background-color: var(--color-1);
@@ -91,9 +92,12 @@ h2 {
     position: sticky;
     top: 0px;
     margin: 0px;
-    width: 10%;
-    font-size: 20px;
-    padding: 10px;
+    width: auto;
+    font-size: 100%;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
     background-color: var(--color-4);
     display: inline-block;
     border-radius: 12px;
@@ -116,7 +120,7 @@ h2>a, h3>a {
     position: relative;
     padding: 25px;
     top: -28px;
-    width: 65%;
+    width: 85%;
     z-index: 0;
     background-color: var(--color-5);
     margin: auto;
@@ -125,25 +129,28 @@ h2>a, h3>a {
 
 h3 {
     font-family: TF2 Build;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .article {
+    justify-items: center;
     background-color: var(--color-7);
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: auto;
     width: 100%;
-    text-align: left;
     padding: 10px;
     box-shadow: 0px 2px 0px var(--color-8),0px -2px 0px var(--color-8);
 }
 
 h4 {
-    font-size: 145%;
+    font-size: 115%;
     color: var(--color-6);
     margin: 0px 0px 10px 0px;
 }
 
 p {
-    font-size: 100%;
+    font-size: 75%;
     margin: 6px 0px 6px 0px;
 }
 
@@ -160,12 +167,140 @@ footer {
 
 .ftext {
     color: var(--color-7);
+    font-size: 50%;
     padding: 20px;
     margin: 0px;
+}
+
+i.flag-america:before, i.flag-united-states:before, i.flag-us:before {
+    background-position: -72px -1950px!important;
+}
+i.flag-eu:before, i.flag-european-union:before {
+    background-position: 0 -1794px!important;
+}
+i.flag-sg:before, i.flag-singapore:before {
+    background-position: -72px -1092px!important;
+}
+i.flag:before {
+    content: "";
+    background: url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px;
+}
+i.flag:before, i.flag:not(.icon) {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+i {
+    padding-top: 1px;
+    padding-right: 17px;
+    padding-bottom: 12px;
+    padding-left: 1px;
+    background-color: black;
 }
 
 .servers {
     box-shadow: 0px -10px var( --color-1);
     background-color: var(--color-1);
     z-index: 3;
+}
+
+@media only screen and (min-width: 390px) {
+    h2 {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    h3 {
+        font-size: 160%;
+    }
+    h4 {
+        font-size: 115%;
+    }
+
+    p {
+        font-size: 85%;
+    }
+    .ftext {
+        font-size: 55%;
+    }
+
+}
+@media only screen and (min-width: 414px) {
+    h2 {
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    h3 {
+        font-size: 175%;
+    }
+    h4 {
+        font-size: 125%;
+    }
+
+    p {
+        font-size: 95%;
+    }
+    .ftext {
+        font-size: 60%;
+    }
+
+}
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-family: TF2 Build;
+        margin: 0px;
+        width: 100%;
+        height: 95px;
+        font-size: 330%;
+        padding: 20px;
+        color: var(--color-5);
+        background-color: var(--color-1);
+    }
+
+    h2 {
+        padding-top: 10px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+    }
+    h3 {
+        font-size: 215%;
+    }
+    h4 {
+        font-size: 145%;
+    }
+
+    p {
+        font-size: 105%;
+    }
+    .ftext {
+        font-size: 60%;
+    }
+
+}
+@media only screen and (min-width: 1280px) {
+    h2 {
+        padding-top: 10px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+    }
+    h3 {
+        font-size: 215%;
+    }
+
+    .ftext {
+        font-size: 60%;
+    }
+
+    .content {
+        width: 75%;
+    }
 }
